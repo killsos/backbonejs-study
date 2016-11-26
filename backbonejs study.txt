@@ -1,3 +1,59 @@
 Backbonejs
 
 Backbonejs开发秘笈
+
+model模型
+  1 设置默认值 defaults
+  2 复制      clone()
+  3 设置多行默认值
+  4 initialize()方法设置默认值
+  5 模型操作方法
+      get set unset unget  has
+      获得HTML转义之后属性值 hacker.escape()
+
+  6 模型标识符
+    每一个模型都有一个用作标识符的ID属性
+    model.id
+    id可以通过设置idAttribute来改变
+
+  7 模型验证
+    validate(attrs)
+    attrs---包含变化的属性 如果不合法 validate方法会返回一条错误信息
+    当save会触发validate
+
+  8 Backbone.Mutators插件可以使属性可以通过访问器属性 getter setter
+
+  9 管理模型的状态 Backbone.Memento
+      initialize()
+      store()
+      restore()
+
+collection集合
+  1 at()
+  2 indexOf()
+  3 clone（） 深度拷贝
+  4 length()
+  5 get(id)
+  6 add({
+    at:
+  }) at指定插入位置
+  7 remove
+  8 reset()
+  9 pop push shift unshift  where each pluck map reduce
+  10 链式操作
+
+
+view视图
+  el
+  initialize
+  render
+  events 使用jquery的on
+  stickit双向绑定
+
+template模板
+  默认underscorejs的模板引擎
+  Mustache
+
+表单
+  Backbone-forms
+  
